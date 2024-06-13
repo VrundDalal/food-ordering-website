@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Signin and Signup </title>
+</head>
+<body>
+  <div class="main-logo">
+    <div class="logo"><h1>Food<b>io</b></h1></div>
+</div>
+
+    <section class="menu">
+        <div class="nav">
+          <a href="index.html">
+            <img src="images/Logo.png" alt="Clickable Image" style="cursor: pointer;">
+          </a>
+            <ul>
+                <li><a class="avtive" href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div>
+               <a href="login.html"><input   class="signin" type="submit" value="Sign In" name="signin"></a>
+                <a href="signup.html"><input  class="signup" type="submit" value="Sign Up" name="signup"></a>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <h1>Sign In</h1>
+        <form>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+          <button class="submit-button" type="submit">Sign In</button>
+        </form>
+      </div>
+      
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          
+        }
+        
+        .container {
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f89b7e;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          user-select: none;
+        }
+        
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ffeae0;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        p{
+            font-size: medium;
+        }
+        
+         button {
+          width: 100%;
+          padding: 10px;
+          background-color: #ff511c;
+          color: #ffeae0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        button:hover {
+          background-color: #ff511c;
+        }
+      </style>
+    </head>
+
+    <br><br><br><br><br><br><br><br>
+
+    <footer>
+        <p><a href="index.html">www.foodio.com </a>
+          <a href="#">foodio@gmail.com</a> 
+             Food Shop. 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

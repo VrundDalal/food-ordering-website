@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodio</title>
+</head>
+<body>
+    <div class="main-logo">
+        <div class="logo"><h1>Food<b>io</b></h1></div>
+    </div>
+
+    <section class="menu">
+       <div class="nav">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Clickable Image" style="cursor: pointer;">
+              </a>
+            
+            <ul>
+                <li><a class="avtive" href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            
+            <div>
+                <a href="login.html"><input class="signin" type="submit" value="Sign In" name="signin"></a>
+                <a href="signup.html"><input class="signup" type="submit" value="Sign Up" name="signup"></a>
+            </div>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>Order Your Best <br>Food Anytime</h2>
+                    <p>hey, our delicious food is waiting for you,<br>
+                    we are always near to you with fresh item of food</p>
+                </div>
+                    <a href="menu.html"><button>Explore Food</button></a>
+                </div>
+            <div class="content-right">
+                <img src="images/image--5.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section class="category">
+        <div class="list-items">
+            <h3>Popular Dishes</h3>
+            <div class="card-list">
+                <div class="card">
+                    <img src="images/image--1.png" onclick="openModal('image--1.png')" alt="Image 1">
+                    <div class="food-title">
+                        <h1>Pasta</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>"I'm not pasta-fied until I've had my spaghetti fix."</p>
+                    </div>
+                    <div class="price"> 
+                        <span>₹ 60 </span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/image--2.png" onclick="openModal('image--2.png')" alt="Image 2">
+                    <div class="food-title">
+                        <h1>Veggie Takos</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>A week without tacos is like... just kidding, I have no idea.</p> 
+                        
+                    </div>
+                    <div class="price"> 
+                        <span>₹ 80 </span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/image--3.png" onclick="openModal('image--3.png')" alt="Image 3">
+                    <div class="food-title">
+                        <h1>Veggie burger</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>“Life is too short to miss out on beautiful burgers.”</p>
+                    </div>
+                    <div class="price"> 
+                        <span>₹ 80 </span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/image--4.png" onclick="openModal('image--4.png')" alt="Image 4">
+                    <div class="food-title">
+                        <h1>Patato Wages</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p>"Mash your cravings with our clever potatoes"</p>
+                    </div>
+                    <div class="price"> 
+                        <span>₹ 50 </span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/image--5.png" onclick="openModal('image--5.png')" alt="Image 5">
+                    <div class="food-title">
+                        <h1>Veggie Pizza</h1>
+                    </div>
+                    <div class="desc-food">
+                        <p> "Pizza is the one thing that I will never get tired of."  </p>
+                    </div>
+                    <div class="price"> 
+                        <span>₹ 120 </span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>                   
+        </div>
+    </section>
+
+
+    <div class="modal" onclick="this.style.display='none'">
+        <img id="modalImg" src="" alt="Modal Image">
+    </div>
+    <script>
+        function openModal(image) {
+            document.getElementById('modalImg').src = image;
+            document.querySelector('.modal').style.display = 'block';
+        }
+    </script>
+
+    <style>
+        .card:hover img {
+                    transform: scale(1.1);
+                }
+        .card:hover p {
+                    opacity: 1;
+                }
+
+        
+    
+    </style>
+
+
+
+
+    
+<br><br><br><br><br><br><br><br>
+
+    <footer>
+        <p><a href="index.html">www.foodio.com </a>
+          <a href="#">foodio@gmail.com</a> 
+             Food Shop. 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>

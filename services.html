@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+</head>
+<body>
+    <div class="main-logo">
+        <div class="logo"><h1>Food<b>io</b></h1></div>
+    </div>
+
+  <section class="menu">
+    <div class="nav">
+        <a href="index.html">
+            <img src="images/Logo.png" alt="Clickable Image" style="cursor: pointer;">
+          </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a class="avtive" href="services.html">Service</a></li>
+            <li><a href="aboutus.html">AboutUs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        <div>
+            <a href="login.html"><input class="signin" type="submit" value="Sign In" name="signin"></a> 
+            <a href="signup.html"><input class="signup" type="submit" value="Sign Up" name="signup"></a>
+        </div>
+    </div>
+</section>
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="box">
+          <img src="images/Takeout.png" onclick="openModal('Takeout.png')" alt="Image 12">
+          <p>Takeout</p>
+      </div>
+      <div class="box">
+          <img src="images/Delivery.png" onclick="openModal('Delivery.png')" alt="Image 12">
+          <p>Delivery</p>
+      </div>
+      <div class="box">
+          <img src="images/Dine-in.png" onclick="openModal('Dine-in.png')" alt="Image 12">
+          <p>Dine-in</p>
+      </div>
+      <div class="box">
+          <img src="images/Catering.png" onclick="openModal('Catering.png')" alt="Image 12">
+          <p>Catering</p>
+      </div> <br><br><br>
+      <div class="box1">
+        <p>This are some of the service we are provideing rightnow if you also whant our 
+            services from any one of this then <br> please contact up on mo. +91 67264-72623 or 
+            mail us on foodio@gmail.com and our website is www.foodid.com<br>thank you for 
+            visiting on our page hope you find well.
+          </p>
+      </div>
+      
+    </div>  
+      <!-- for image popup -->
+<div class="modal" onclick="this.style.display='none'">
+    <img id="modalImg" src="" alt="Modal Image">
+</div>
+<script>
+    function openModal(image) {
+        document.getElementById('modalImg').src = image;
+        document.querySelector('.modal').style.display = 'block';
+    }
+</script>
+        
+        <style>
+          .box {
+              width: 200px;
+              height: 200px;
+              border: 1px solid #ff511c;
+              border-width: 2px;
+              display: inline-block;
+              margin: 10px;
+              padding: 10px;
+              overflow: hidden;
+              position: relative;
+              user-select: none;
+          }
+        
+          .box img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease-in-out;
+          }
+        
+          .box:hover img {
+              transform: scale(1.1);
+          }
+        
+          .box p {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              background-color: rgba(0, 0, 0, 0.7);
+              color: white;
+              padding: 10px;
+              margin: 0;
+              font-size: 14px;
+              text-align: center;
+              opacity: 0;
+              transition: opacity 0.3s ease-in-out;
+          }
+        
+          .box:hover p {
+              opacity: 1;
+          }
+          .box1 {
+              width: fit-content;
+              height: 100px;
+              border: 1px solid #ff511c;
+              border-width: 2px;
+              display: inline-block;
+              margin: 10px;
+              padding: 10px;
+              overflow: hidden;
+              position: relative;
+          }
+          .box1 p{
+            font-family: sans-serif;
+            font-size: large;
+          }
+
+        </style>
+
+<br><br><br><br><br><br><br><br>
+        <footer>
+          <p><a href="index.html">www.foodio.com </a>
+          <a href="#">foodio@gmail.com</a> 
+             Food Shop. 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>

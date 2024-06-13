@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <title>Food Photo Gallery</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    
+    .gallery-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .gallery-item h3 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-logo">
+    <div class="logo"><h1>Food<b>io</b></h1></div>
+</div>
+
+  <section class="menu">
+    <div class="nav">
+      <a href="index.html">
+        <img src="images/Logo.png" alt="Clickable Image" style="cursor: pointer;">
+      </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="aboutus.html">AboutUs</a></li>
+            <li><a class="avtive" href="gallery.html">Gallery</a></li>
+        </ul>
+        <div>
+            <a href="login.html"><input class="signin" type="submit" value="Sign In" name="signin"></a> 
+            <a href="signup.html"><input class="signup" type="submit" value="Sign Up" name="signup"></a>
+        </div>
+    </div>
+</section>
+<section class="gallery">
+  <div class="list-items">
+      <h3>Lets Know Something About Our Food</h3>
+      <div class="card-list">
+        
+        <div class="box">
+          <img src="images/masalatea.png" onclick="openModal('masalatea.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Masala Tea</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/coffee.png" onclick="openModal('coffee.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Coffee</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/coldcoffee.png" onclick="openModal('coldcoffee.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Cold Coffee</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/hotchocolate.png" onclick="openModal('hotchocolate.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Hot Chocolate</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+              <img src="images/image--3.png" onclick="openModal('image--3.png')" alt="Image 12">
+              <div class="food-title">
+                  <h1>Burger</h1>
+              </div>
+        </div>
+          
+        <div class="box">
+              <img src="images/image--5.png" onclick="openModal('image--5.png')" alt="Image 12">
+              <div class="food-title">
+                  <h1>Pizza</h1>
+              </div>
+        </div>
+
+        <div class="box">
+          <img src="images/biryani.png" onclick="openModal('biryani.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Biryani</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/samosa.png" onclick="openModal('samosa.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Samosa</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/salad.png" onclick="openModal('salad.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Fresh Salad</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/sushi.png" onclick="openModal('sushi.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Sushi</h1>
+          </div>
+        </div>
+          
+        <div class="box">
+              <img src="images/hotdog.png" onclick="openModal('hotdog.png')" alt="Image 12">
+              <div class="food-title">
+                  <h1>Hot dog</h1>
+              </div>
+        </div>
+          
+        <div class="box">
+              <img src="images/image--1.png" onclick="openModal('image--1.png')" alt="Image 12">
+              <div class="food-title">
+                  <h1>Pasta</h1>
+              </div>
+        </div>
+          
+        <div class="box">
+            <img src="images/image--2.png" onclick="openModal('image--2.png')" alt="Image 12">
+            <div class="food-title">
+                <h1>Veggie Takos</h1>
+            </div>
+        </div> 
+        
+        <div class="box">
+          <img src="images/frenchfries.png" onclick="openModal('frenchfries.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>French Fries</h1>
+          </div>
+        </div>
+<!--## -->
+        <div class="box">
+          <img src="images/chilly paneer.png" onclick="openModal('chilly paneer.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Chilly Paneer</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/momos.png" onclick="openModal('momos.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Momos</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/noodles.png" onclick="openModal('noodles.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Noodles</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/vada.png" onclick="openModal('vada.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Dal Vada</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/khaman.png" onclick="openModal('khaman.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Khaman</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/bhel.png" onclick="openModal('bhel.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Bhel</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/springroll.png" onclick="openModal('springroll.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Spring Roll</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/paratha.png" onclick="openModal('paratha.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Paratha</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/brownie.png" onclick="openModal('brownie.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Brownie</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/donuts.png" onclick="openModal('donuts.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Donuts</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/pie.png" onclick="openModal('pie.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Pie Cake</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/cake.png" onclick="openModal('cake.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Cake</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/waffle.png" onclick="openModal('waffle.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Waffle</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/ice-cream.png" onclick="openModal('ice-cream.png')" alt="Image 12">
+          <div class="food-title">
+              <h1>Ice Cream</h1>
+          </div>
+        </div>
+
+  </div>
+  </div>
+</section>
+
+<!-- for image popup -->
+<div class="modal" onclick="this.style.display='none'">
+  <img id="modalImg" src="" alt="Modal Image">
+</div>
+<script>
+  function openModal(image) {
+      document.getElementById('modalImg').src = image;
+      document.querySelector('.modal').style.display = 'block';
+  }
+</script>
+
+<style>
+.box {
+              width: 200px;
+              height: auto;
+              border: 1px solid #ff511c;
+              border-width: 2px;
+              display: inline-block;
+              margin: 10px;
+              padding: 10px;
+              overflow: hidden;
+              position: relative;
+              user-select: none;
+
+          }
+        
+  .box img {
+              width: 100%;
+              height: fit-content;
+              object-fit: cover;
+              text-align: center;
+              transition:  0.3s ease-in-out;
+          }
+  
+    .box:hover img {
+              transform: scale(1.1);
+          }
+
+</style>
+
+<br><br><br><br><br><br><br><br>
+
+    <!-- Add more gallery items here -->
+    <footer>
+      <p><a href="index.html">www.foodio.com </a>
+        <a href="#">foodio@gmail.com</a> 
+           Food Shop. 2024 All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+

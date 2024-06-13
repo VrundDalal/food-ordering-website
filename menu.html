@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="main-logo">
+        <div class="logo"><h1>Food<b>io</b></h1></div>
+    </div>
+    
+      <section class="menu">
+        <div class="nav">
+          <a href="index.html">
+            <img src="images/Logo.png" alt="Clickable Image" style="cursor: pointer;">
+          </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="avtive" href="menu.html">Menu</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div>
+               <a href="login.html"><input class="signin" type="submit" value="Sign In" name="signin"></a> 
+               <a href="signup.html"><input class="signup" type="submit" value="Sign Up" name="signup"></a> 
+            </div>
+        </div>
+    </section>
+    <div class="full-menu">
+        <div class="menu-category">
+            <h2>beverages</h2> <br>
+            <div class="menu-item">
+                <img src="images/masalatea.png" onclick="openModal('masalatea.png')" alt="Image 6">
+                <p>Masala Tea</p>
+                <div class="price"> 
+                    <span>₹ 20 </span>
+                    <button>+</button>
+                </div>
+            </div>
+
+            
+            
+            <div class="menu-item">
+                <img src="images/coffee.png" onclick="openModal('coffee.png')" alt="Image 7">
+                <p>coffee</p>
+                <div class="price"> 
+                    <span>₹ 99 </span>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/coldcoffee.png" onclick="openModal('coldcoffee.png')" alt="Image 8">
+                <p>cold coffee</p>
+                <div class="price"> 
+                    <span>₹ 100 </span>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/hotchocolate.png" onclick="openModal('hotchocolate.png')" alt="Image 9">
+                <p>Hot Chocolate</p>
+                <div class="price"> 
+                    <span>₹ 120 </span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+    <div class="menu-category">
+        <h2>Starter</h2> <br>
+
+        <div class="menu-item">
+            <img src="images/salad.png" onclick="openModal('manchurian.png')" alt="Image 10">
+            <p>Fresh Salad</p>
+            <div class="price"> 
+                <span>₹ 50 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/samosa.png" onclick="openModal('samosa.png')" alt="Image 6">
+            <p>Samosa</p>
+            <div class="price"> 
+                <span>₹ 30 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/frenchfries.png" onclick="openModal('frenchfries.png')" alt="Image 11">
+            <p>FrenchFries</p>
+            <div class="price"> 
+                <span>₹ 99 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/image--4.png" onclick="openModal('image--4.png')" alt="Image 11">
+            <p>Patato Wages</p>
+            <div class="price"> 
+                <span>₹ 50 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/khaman.png" onclick="openModal('khaman.png')" alt="Image 6">
+            <p>Khaman</p>
+            <div class="price"> 
+                <span>₹ 25 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/vada.png" onclick="openModal('vada.png')" alt="Image 6">
+            <p>Dal Vada</p>
+            <div class="price"> 
+                <span>₹ 25 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/springroll.png" onclick="openModal('springroll.png')" alt="Image 6">
+            <p>Spring Roll</p>
+            <div class="price"> 
+                <span>₹ 35 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/bhel.png" onclick="openModal('bhel.png')" alt="Image 6">
+            <p>Bhel</p>
+            <div class="price"> 
+                <span>₹ 35 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/paratha.png" onclick="openModal('paratha.png')" alt="Image 6">
+            <p>Paratha</p>
+            <div class="price"> 
+                <span>₹ 35 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+
+    <div class="menu-category">
+        <h2>Main Courses</h2> <br>
+        <div class="menu-item">
+            <img src="images/pizza1.png" onclick="openModal('pizza1.png')" alt="Image 12">
+            <p>Pizza</p>
+            <div class="price"> 
+                <span>₹ 120 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/biryani.png" onclick="openModal('pizza1.png')" alt="Image 12">
+            <p>Biryani</p>
+            <div class="price"> 
+                <span>₹ 170 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/chilly paneer.png" onclick="openModal('pizza1.png')" alt="Image 12">
+            <p>Chilly Paneer</p>
+            <div class="price"> 
+                <span>₹ 90 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/momos.png" onclick="openModal('momos.png')" alt="Image 12">
+            <p>Momos</p>
+            <div class="price"> 
+                <span>₹ 90 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/noodles.png" onclick="openModal('noodles.png')" alt="Image 12">
+            <p>Noodles</p>
+            <div class="price"> 
+                <span>₹ 80 </span>
+                <button>+</button>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="images/manchurian.png" onclick="openModal('manchurian.png')" alt="Image 10">
+            <p>Veg Manchurian</p>
+            <div class="price"> 
+                <span>₹ 80 </span>
+                <button>+</button>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="images/image--1.png" onclick="openModal('manchurian.png')" alt="Image 10">
+            <p>Pasta</p>
+            <div class="price"> 
+                <span>₹ 80 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/image--3.png" onclick="openModal('image--3.png')" alt="Image 13">
+            <p>Burder</p>
+            <div class="price"> 
+                <span>₹ 80 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/image--2.png" onclick="openModal('image--2.png')" alt="Image 13">
+            <p>Veggie Takos</p>
+            <div class="price"> 
+                <span>₹ 80 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/sushi.png" onclick="openModal('sushi.png')" alt="Image 13">
+            <p>Sushi</p>
+            <div class="price"> 
+                <span>₹ 80 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+    <div class="menu-category">
+        <h2>Desserts</h2> <br>
+        <div class="menu-item">
+            <img src="images/brownie.png" onclick="openModal('donuts.png')" alt="Image 5">
+            <p>Brownie</p>
+            <div class="price"> 
+                <span>₹ 150 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/cake.png" onclick="openModal('cake.png')" alt="Image 5">
+            <p>Cake</p>
+            <div class="price"> 
+                <span>₹ 500 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/waffle.png" onclick="openModal('waffle.png')" alt="Image 5">
+            <p>Waffle</p>
+            <div class="price"> 
+                <span>₹ 110 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/pie.png" onclick="openModal('pie.png')" alt="Image 5">
+            <p>Pie Cake</p>
+            <div class="price"> 
+                <span>₹ 130 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/donuts.png" onclick="openModal('donuts.png')" alt="Image 5">
+            <p>Donuts</p>
+            <div class="price"> 
+                <span>₹ 120 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/ice-cream.png" onclick="openModal('ice-cream.png')" alt="Image 5">
+            <p>Ice Cream</p>
+            <div class="price"> 
+                <span>₹ 70 </span>
+                <button>+</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- for image popup -->
+<div class="modal" onclick="this.style.display='none'">
+    <img id="modalImg" src="" alt="Modal Image">
+</div>
+<script>
+    function openModal(image) {
+        document.getElementById('modalImg').src = image;
+        document.querySelector('.modal').style.display = 'block';
+    }
+</script>
+    
+    <style>
+.menu-item {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    grid-template-columns: repeat(5, 2fr);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: none;
+    outline: 2px solid #faad96;
+    }
+    
+.menu-item img {
+    width: 100px;
+    height: auto;
+    align-items: center;
+    }
+    
+.menu-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    
+.menu-item p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+.menu-container .menu-item .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item .price span{
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.menu-item .price button {
+    background-color: #ff511c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+
+  
+.menu-item .price button:hover {
+    background-color: #ff511c;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+.menu-item:hover img {
+              transform: scale(1.1);
+          }
+
+    
+    </style>
+
+
+<br><br><br><br><br>
+    <footer>
+        <p><a href="index.html">www.foodio.com </a>
+          <a href="#">foodio@gmail.com</a> 
+             Food Shop. 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
